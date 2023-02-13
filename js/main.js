@@ -1,7 +1,7 @@
 const BarButton = document.querySelector("#bars");
 const HeaderList = document.querySelector(".header__list");
 const Actived = "actived";
-window.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) {
     if (!HeaderList.contains(e.target)
         && HeaderList.classList.contains(Actived) === true
         && !BarButton.contains(e.target)) {
