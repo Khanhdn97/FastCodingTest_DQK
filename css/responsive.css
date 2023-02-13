@@ -1,0 +1,255 @@
+@import url("main.css");
+/* Responsive */
+
+/* Tablet */
+@media only screen and (max-width : 68.75rem) {
+    html {
+        font-size: 12px;
+    }
+
+    body::before {
+        height: 48rem;
+    }
+
+
+    hr {
+        margin: 1rem 0;
+    }
+
+    /* Header */
+    .header__list {
+        width: 55.4%;
+    }
+
+    /* Carousel */
+    .carousel__content {
+        height: 36rem;
+        justify-content: center;
+    }
+
+    .carousel__content .left .text {
+        display: none;
+    }
+
+    .carousel__content .left .title {
+        width: 95%;
+    }
+
+    .carousel__content .left button {
+        margin-top: 2rem;
+    }
+
+    .carousel__content .right form input {
+        margin: 1.2rem 2.3rem;
+        padding: 0.325rem
+    }
+
+    /* Features */
+    .features__content {
+        height: 33rem;
+    }
+
+    .feature__first button {
+        width: 6.5rem;
+        padding: 2.3rem 2.188rem;
+    }
+
+    .feature__second {
+        margin: 3rem;
+    }
+
+    .feature__second .text {
+        margin: 3rem 0;
+    }
+
+    /* Sub List */
+    .sub__list__content {
+        height: 28rem;
+    }
+
+    .sub__list__content .sub__left {
+        margin-right: 2rem;
+    }
+
+    /* Standard Picture */
+    .SP__content {
+        height: 28rem;
+    }
+
+    .SP__content .SP__left {
+        margin-right: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Why Awesome */
+
+    .WA__content {
+        text-align: center;
+        height: 36rem;
+    }
+
+    .WA__content .WA__down {
+        margin-top: 3rem;
+    }
+
+    /* Contact Us */
+    .contact__content .contact__form {
+        width: 70%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width : 46.25rem) {
+    html {
+        font-size: 12px;
+    }
+
+    /* Header */
+
+    .header__list {
+        position: fixed;
+        display: block;
+        top: 0;
+        right: -35%;
+        bottom: 0;
+        width: 35%;
+        background-color: var(--color-bg-2);
+        transition: all 0.5s ease-in-out;
+        z-index: 1;
+        box-shadow: -1rem 0 10px rgba(128, 128, 128, 0.382);
+    }
+
+    .header__list.actived {
+        transform: translateX(-100%);
+    }
+
+    .header__list ul {
+        flex-direction: column;
+        align-items: baseline;
+        margin: 10% 0 0 10%;
+    }
+    .header__list ul li{
+        display: block;
+        padding: 1rem;
+    }
+    .header__list ul li a {
+        width: 100%;
+        font-size: var(--fs-2);
+        color: var(--title-dark);
+    }
+
+    .header__list ul li a:hover {
+        background-color: var(--secondary);
+    }
+
+    .header__content #bars {
+        display: block;
+    }
+
+    /* Carousel */
+    .carousel__content {
+        flex-direction: column;
+    }
+
+    .carousel__content .left {
+        width: 100%;
+        margin-bottom: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .carousel__content .left .hr {
+        display: none;
+    }
+
+    .carousel__content .left .title {
+        display: none;
+    }
+
+    .carousel__content .left button {
+        margin: 0 0 0 5rem;
+    }
+
+    /* Features */
+    .features__content {
+        height: 28rem;
+    }
+
+    .feature__second {
+        margin: 1.5rem;
+    }
+
+    .feature__second .text {
+        margin: 1.5rem 0;
+    }
+
+    .features__content .feature__third img {
+        display: none;
+    }
+
+    /* Sub List */
+    .sub__list__content .sub__left {
+        display: none;
+    }
+
+    .sub__list__content {
+        height: 28rem;
+    }
+
+    /* Standard Picture */
+    .SP__content {
+        height: 28rem;
+    }
+
+    .SP__content .SP__right {
+        display: none;
+    }
+
+    /* Why Awesome */
+    .WA__content {
+        align-items: center;
+    }
+
+    .WA__content .WA__up .text {
+        display: none;
+    }
+
+    .WA__content .WA__down {
+        width: 25rem;
+    }
+
+    .WA__content .WA__down .item:nth-child(1) {
+        grid-column: 1/3;
+    }
+
+    .WA__content .WA__down .item:nth-child(2) {
+        margin: 0;
+    }
+
+    .WA__content .WA__down {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .WA__content .WA__down .item .text {
+        display: none;
+    }
+
+    /* Stylish */
+    .stylish__content {
+        text-align: center;
+    }
+
+    /* Contact */
+    .contact__content .contact__form {
+        display: flex;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    .contact__content .contact__title .text {
+        display: none;
+    }
+}
